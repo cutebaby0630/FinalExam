@@ -12,6 +12,7 @@ public class Main {
 	String name;
 	int num;
 	int a=1;
+
 	boolean order = true;
 	List<Course> course =new ArrayList<>();
 	public Main(){
@@ -25,9 +26,13 @@ public class Main {
 			Scanner scanner = new Scanner(System.in);
 			System.out.println("請輸入餐點:");
 			String id = scanner.nextLine();
-			if(id=="0"){
+			
+			if(id=="q"){
 				order = false;
 				return;
+			}
+			if(id=="0"){
+				
 			}
 			System.out.println("請輸入數量:");
 			int num = scanner.nextInt();

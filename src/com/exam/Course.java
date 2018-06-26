@@ -14,6 +14,16 @@ public class Course {
 		this.cal=cal;
 				
 	}
+	public  boolean isAvailable(String id ,int num){
+			id=this.id;
+			boolean avail = true; 
+			if(id!=this.id){
+				return false;
+			}
+			return avail;
+			
+			
+	}
 	public String getId() {
 		return id;
 	}
