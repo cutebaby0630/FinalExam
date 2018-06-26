@@ -27,16 +27,16 @@ public class Main {
 			System.out.println("請輸入餐點:");
 			String id = scanner.nextLine();
 			
-			if(id=="q"){
+			switch(id){
+			case "q":
 				order = false;
-				return;
-			}
-			if(id=="0"){
+				break;
+			case "0":
 				
 			}
 			System.out.println("請輸入數量:");
 			int num = scanner.nextInt();
-			Course name = course.get(Integer.parseInt(id));
+			Course name = (Course)course.get(Integer.parseInt(id));
 			System.out.println("目前餐點: ");
 			System.out.println(a +"."+name+" "+num+"份");
 			
